@@ -9,7 +9,7 @@ var statusTweet = `New crypto alert: @trush_io. It’s a new banking protocol on
 var isRunning = false;
 var hashtags = ['#cryptotrading'];
 
-var job = new CronJob('*/10 * * * *', function () {
+var job = new CronJob('*/15 * * * *', function () {
     if (isRunning == false) {
         makeTweet();
         isRunning = true;
